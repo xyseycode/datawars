@@ -106,3 +106,13 @@ WHERE
 10
 Basic Aggregations(Use WHERE, GROUP BY, ORDER BY)
 ************************************************************************/
+SELECT
+	COUNT(*), rating
+FROM
+	film
+WHERE
+	rental_rate > 3
+GROUP BY
+	rating
+ORDER BY
+	rating ASC;
