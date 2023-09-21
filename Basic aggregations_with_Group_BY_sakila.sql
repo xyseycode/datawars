@@ -96,7 +96,12 @@ LIMIT
 9
 How many actresses are called MARY?
 ************************************************************************/
-
+SELECT
+	COUNT(first_name)
+FROM
+	actor
+WHERE
+	first_name = 'Mary';
 /************************************************************************
 10
 Basic Aggregations(Use WHERE, GROUP BY, ORDER BY)
