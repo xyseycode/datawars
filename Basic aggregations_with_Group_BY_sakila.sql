@@ -81,6 +81,16 @@ LIMIT 15;
 8
 When was the last rental of customer 350?
 ************************************************************************/
+SELECT
+	rental_date
+FROM
+	rental
+WHERE
+	customer_id = 350
+ORDER BY
+	rental_date DESC
+LIMIT
+	1;
 
 /************************************************************************
 9
